@@ -1,0 +1,121 @@
+.wrapper {
+	margin: 0 auto;
+	width: 1600px;
+}
+
+.button {
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 24px;
+	text-decoration: none;
+	user-select: none;
+}
+
+a.button * {
+	pointer-events: none;
+}
+
+/* types */
+
+.button.rounded {
+	background-color: rgba(242,242,242,1);
+	border-radius: 30px;
+	color: rgba(0,0,0,1);
+	display: inline-block;
+	filter: invert(0) brightness(1);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	letter-spacing: 1px;
+	padding: 20px 30px;
+	text-transform: uppercase;
+	transition: filter 150ms ease-out;
+}
+
+.button.rounded:hover {
+	filter: invert(0.05) brightness(0.95);
+}
+
+.button.full {
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+}
+
+.button.full i {
+	float: none;
+	vertical-align: sub;
+}
+
+/* back button in single-pages */
+
+.button.back {
+	border-radius: 100%;
+    height: 30px;
+    left: calc(50% - 1600px / 2 - 80px);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%) translateZ(0) translateX(-50%);
+    width: 30px;
+}
+
+.button.rounded.utforska_responsive {
+	display: none;
+}
+
+.button.back.responsive {
+	display: none;
+	position: static;
+	transform: translateY(-50%) translateZ(0) translateX(0);
+	left: 30px;
+}
+
+.button.back.neutral i {
+    float: initial;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) translateZ(0);
+}
+
+/* color variations */
+
+.button.green {
+	background-color: rgba(47,198,84,1);
+	color: rgba(255,255,255,1);
+}
+
+.button.neutral {
+	background-color: rgba(45,52,71,1);
+	color: rgba(255,255,255,1);
+	transition: background-color 150ms ease-out, color 150ms ease-out;
+}
+
+.button.negative {
+	background-color: rgba(198,47,47,1);
+	color: rgba(255,255,255,1);
+	transition: background-color 150ms ease-out, color 150ms ease-out;
+}
+
+.button.neutral:hover,
+.button.neutral_active {
+	background-color: rgba(250,205,95,1);
+	color: rgba(45,52,71,1);
+	filter: none;
+}
+
+.button.neutral i,
+.button.neutral_active i {
+	float: right;
+	margin-left: 15px;
+}
+
+/* Submit */
+
+button[type="submit"].rounded {
+	padding: 15px 30px;
+}

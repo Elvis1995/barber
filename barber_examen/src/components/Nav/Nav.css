@@ -1,0 +1,309 @@
+nav {
+	background-position: center;
+	background-color: black;
+	background-size: cover;
+	left: 0;
+	padding: 80px 0;
+	position: fixed;
+	top: 0;
+	transition: background-color 150ms ease-out, padding 300ms ease-out, height 300ms ease-out;
+	width: 100%;
+	z-index: 98;
+}
+
+nav a {
+	color: red;
+}
+
+nav.on_scroll {
+	background-blend-mode: soft-light;
+	background-color: rgba(43,42,60,1);
+/*	background-image: url(../../img/graphics/nav.png);
+	box-shadow: inset 0px -5px 10px rgba(0,0,0,0.05);*/
+	padding: 30px 0;
+}
+
+/* Links (for hamburger) */
+
+nav .links {
+	display: none;
+	pointer-events: none;
+}
+
+nav .links .select_country {
+	display: none;
+}
+
+nav .links ul {
+	pointer-events: all;
+}
+
+/* Hamburger */
+
+nav .hamburger {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 45px;
+	z-index: 15;
+}
+
+/* span */
+
+nav .hamburger span {
+	background-color: rgba(255,255,255,1);
+	display: block;
+	height: 3px;
+	margin: 8px auto;
+	transition: background-color 300ms ease-out;
+	width: 45px;
+}
+
+nav .links.out + .hamburger span:nth-child(1) {
+	animation: hamburger_top_reverse 300ms ease-out forwards;
+}
+
+nav .links.in + .hamburger span:nth-child(1) {
+	animation: hamburger_top 300ms ease-out forwards;
+}
+
+@keyframes hamburger_top {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(11px) rotateZ(0deg);
+		transform-origin: 50% 50%;
+	}
+	100% {
+		transform: translateY(11px) rotateZ(-45deg);
+	}
+}
+
+@keyframes hamburger_top_reverse {
+	0% {
+		transform: translateY(11px) rotateZ(-45deg);
+	}
+	50% {
+		transform: translateY(11px) rotateZ(0deg);
+		transform-origin: 50% 50%;
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+nav .links.out + .hamburger span:nth-child(2) {
+	animation: hamburger_mid_reverse 300ms ease-out forwards;
+}
+
+nav .links.in + .hamburger span:nth-child(2) {
+	animation: hamburger_mid 300ms ease-out forwards;
+}
+
+@keyframes hamburger_mid {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes hamburger_mid_reverse {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+nav .links.out + .hamburger span:nth-child(3) {
+	animation: hamburger_bottom_reverse 300ms ease-out forwards;
+}
+
+nav .links.in + .hamburger span:nth-child(3) {
+	animation: hamburger_bottom 300ms ease-out forwards;
+}
+
+@keyframes hamburger_bottom {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-11px) rotateZ(0deg);
+		transform-origin: 50% 50%;
+	}
+	100% {
+		transform: translateY(-11px) rotateZ(45deg);
+	}
+}
+
+@keyframes hamburger_bottom_reverse {
+	0% {
+		transform: translateY(-11px) rotateZ(45deg);
+	}
+	50% {
+		transform: translateY(-11px) rotateZ(0deg);
+		transform-origin: 50% 50%;
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+/* menu container */
+
+nav .menu_container {
+	float: right;
+	height: 100%;
+	line-height: 50px;
+	max-height: 50px;
+	transition: max-height 300ms ease-out;
+}
+
+/* Select Country */
+
+nav .select_country {
+	height: 100%;
+	margin: 0 50px 0 0;
+	max-height: 50px;
+	opacity: 0;
+	overflow: hidden;
+	transition: max-height 300ms ease-out;
+}
+
+nav .menu_container.active,
+nav .menu_container.active .select_country {
+	max-height: 500px;
+}
+
+nav .menu_container .select_country .button {
+	cursor: pointer;
+	display: block;
+	float: none;
+	margin: 0;
+	opacity: 0;
+}
+
+nav .menu_container.active .select_country .button {
+	opacity: 1;
+	transition: color 150ms ease-out;
+}
+
+nav .menu_container.active .select_country .button:nth-child(2) {
+	transition: opacity 150ms ease-out 300ms, color 150ms ease-out;
+}
+
+nav .menu_container.active .select_country .button:nth-child(3) {
+	transition: opacity 150ms ease-out 375ms, color 150ms ease-out;
+}
+
+nav .menu_container.active .select_country .button:nth-child(4) {
+	transition: opacity 150ms ease-out 450ms, color 150ms ease-out;
+}
+
+nav .menu_container.active .select_country .button:nth-child(5) {
+	transition: opacity 150ms ease-out 525ms, color 150ms ease-out;
+}
+
+nav .menu_container .select_country .button.default {
+	border-right: 1px dotted rgba(220,220,220,0.15);
+	padding-right: 50px;
+	opacity: 1;
+}
+
+nav .select_country a.button {
+	color: rgba(255,255,255,1);
+}
+
+nav .select_country a.button:hover {
+	color: rgba(250,205,95,1);
+}
+
+nav .menu_container .select_country i {
+	font-size: 36px;
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	opacity: 0.15;
+	transition: opacity 150ms ease-out, transform 150ms ease-out;
+}
+
+nav .menu_container.active .select_country i {
+	animation: select_arrow_blink 1200ms ease-in-out infinite forwards;
+	opacity: 1;
+	transform: scaleY(-1);
+}
+
+nav .menu_container .select_country:hover i {
+	opacity: 1;
+}
+
+@keyframes select_arrow_blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.15;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+nav .menu_container .button,
+nav .menu_container .select_country {
+	float: left;
+}
+
+nav .menu_container .button {
+	margin: 0 50px 0 0;
+}
+
+nav .menu_container .button:last-child {
+	margin: 0;
+}
+
+nav a.button {
+	color: rgba(255,255,255,0.5);
+}
+
+nav a.button:hover,
+nav a.button.active {
+	color: rgba(255,255,255,1);
+}
+
+nav:not(.intro) a.button.active {
+	color: rgba(250,205,95,1);
+	cursor: initial;
+	pointer-events: none;
+}
+
+nav.intro a.button.active:hover {
+	color: rgba(250,205,95,1);
+}
+
+/* logo */
+
+nav a[data-href="intro"] {
+	display: block;
+	float: left;
+	margin: 0;
+	opacity: 0;
+}
+
+nav img.logo {
+	float: left;
+}
+
