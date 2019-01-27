@@ -8,6 +8,18 @@ class App extends Component {
       <div className="App">
 			<Nav />
 			<Header />
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
+			<h1>hej</h1>
       </div>
     );
   }
