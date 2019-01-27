@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../../../src/Master.css';
 import '../../components/Nav/Nav.css';
 
-export default class Header extends Component {
+export default class Nav extends Component {
   render() {
     return (
 	  <div>

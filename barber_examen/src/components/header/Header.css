@@ -1,3 +1,77 @@
-h1 {
-  color: red;
+/* hero */
+
+section#header {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(-45deg, rgba(55,45,75,1) 0%, rgba(45,52,71,1) 100%);
+	height: 100%;
+	min-height: 100vh;
+	width: 100%;
 }
+
+/* header - patterns */
+
+section#header pattern {
+	opacity: 0;
+	transform: translateZ(0px);
+}
+
+section#header .graphic {
+	background-position: calc(100% + 760px) 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* bottom: 0; */
+    height: 100%;
+    mix-blend-mode: lighten;
+    /* opacity: 0; */
+    position: absolute;
+    /* right: 0; */
+    width: 100%;
+}
+
+/* header - wrapper */
+
+section#header .wrapper {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* header - graphic */
+
+section#header graphic {
+	background-position: calc(100% + 760px) 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	right: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transform: translateZ(0px);
+	width: 100%;
+}
+
+/* header - text */
+
+section#header .wrapper h1 {
+	color: rgba(250,205,95,1);
+	margin: 0 0 15px 0;
+}
+
+section#header .wrapper h1,
+section#header .wrapper p {
+	max-width: 50%;
+}
+
+section#header .wrapper p {
+	color: rgba(255,255,255,1);
+}
+
+/* header - button */
+
+section#header .button {
+	margin: 25px 0 0 0;
+}
+
