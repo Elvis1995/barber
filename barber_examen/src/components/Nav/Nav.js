@@ -9,13 +9,12 @@ export default class Header extends Component {
 		<nav>
 			<div className="wrapper">
 				<a href="{{ url('intro') }}">
-					<img className="logo" src="img/logos/logo_gold.png" alt="Logo" border="0" />
+					<img className="logo" src="/img/logo/logo.png" alt="Logo" />
 				</a>
 				<div className="menu_container">
-					<a href="{{ url('stories') }}" className="button">Sida 1</a>
-					<a href="{{ url('concepts') }}" className="button">Sida 2</a>
-					<a href="{{ url('stores') }}" className="button">Sida 3</a>
-					<a href="{{ url('contact') }}" className="button">Sida 4</a>
+					<a href="{{ url('stories') }}" className="button">Startsida</a>
+					<a href="{{ url('concepts') }}" className="button">Boka nu</a>
+					<a href="{{ url('stores') }}" className="button">Kontakt</a>
 				</div>
 			</div>
 		</nav>
