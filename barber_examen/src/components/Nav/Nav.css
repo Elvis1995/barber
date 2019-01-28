@@ -1,8 +1,8 @@
-nav {
+.nav {
 	background-position: center;
 	background-size: cover;
 	left: 0;
-	padding: 30px 0;
+	padding: 80px 0;
 	position: fixed;
 	top: 0;
 	transition: background-color 150ms ease-out, padding 300ms ease-out, height 300ms ease-out;
@@ -10,7 +10,7 @@ nav {
 	z-index: 98;
 }
 
-nav.on_scroll {
+.scrolled {
 	background-blend-mode: soft-light;
 	background-color: rgba(43,42,60,1);
 	padding: 30px 0;
@@ -18,7 +18,7 @@ nav.on_scroll {
 
 /* menu container */
 
-nav .menu_container {
+.nav .menu_container {
 	float: right;
 	height: 100%;
 	line-height: 50px;
@@ -26,19 +26,19 @@ nav .menu_container {
 	transition: max-height 300ms ease-out;
 }
 
-nav .menu_container .button {
+.nav .menu_container .button {
 	margin: 0 50px 0 0;
 }
 
-nav .menu_container .button:last-child {
+.nav .menu_container .button:last-child {
 	margin: 0;
 }
 
-nav a.button {
+.nav a.button {
 	color: rgba(255,255,255,1);
 }
 
 /* hover */
-nav a.button:hover {
+.nav a.button:hover {
 	color: rgba(250,205,95,1);
 }
