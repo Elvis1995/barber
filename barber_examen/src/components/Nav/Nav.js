@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import './nav_func';
 import '../../../src/Master.css';
 import '../../components/Nav/Nav.css';
 
 export default class Nav extends Component {
+
+
   render() {
     return (
 	  <div>

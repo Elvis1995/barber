@@ -26,6 +26,17 @@ h1 span {
 	padding: 1px 0 0 0;
 }
 
+/* h2 */
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+
 /* p */
 
 p {
