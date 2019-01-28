@@ -5,6 +5,8 @@
 
 .wrapper {
 	margin: 0 auto;
+	max-width: 90%;
+    overflow: hidden;
 	width: 1600px;
 }
 
