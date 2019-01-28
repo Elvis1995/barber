@@ -158,6 +158,7 @@ button[type="submit"].rounded {
 	padding: 15px 30px;
 }
 
+/* pattern */
 
 .pattern.black_sand {
 	background-attachment: fixed;
@@ -167,4 +168,19 @@ button[type="submit"].rounded {
 	position: absolute;
 	pointer-events: none;
     width: 100%;
+}
+
+/* columns */
+
+.cols {
+	overflow: auto;
+}
+
+.cols .col {
+	float: left;
+}
+
+.cols.cols_two .col {
+	height: 100%;
+	width: 50%;
 }

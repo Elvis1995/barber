@@ -7,7 +7,7 @@ export default class Header extends Component {
     return (
 	  <div>
 		<section id="header">
-			<div className="container">
+			
 				<img className="pattern black_sand" src="img/pattern/black_sand.png" alt="header_bg" />
 				<img className="graphic" src="img/background/head_bg.png" alt="graphic" />
 				<div className="wrapper">
@@ -18,7 +18,7 @@ export default class Header extends Component {
 					<p>Hos oss hittar du ett gäng kreativa och nyskapande frisörer som hjälper dig med allt från produktråd och välbehövliga frisyrtips till att fixa en vacker håruppsättning inför festen. Vi erbjuder allt från klippning, färg till tvätt och föning men även komplett styling, bröllop och festupsättning  inför fest och bröllop.</p>
 					<a href="{{ url('intro') }}" className="button rounded green" data-booking-button>Boka nu</a>
 				</div>
-			</div>
+		
 		</section>
       </div>
     )
