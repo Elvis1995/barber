@@ -1,0 +1,11 @@
+section#offers {
+	/* background-attachment: fixed; */
+	background-image: url(/img/background/offers_bg.png), linear-gradient(-45deg, rgba(55,45,75,1) 0%, rgba(45,52,71,1) 100%);
+	background-position: center;
+	background-size: cover;
+	/* padding: 130px 0 0 0; */
+	height: 100vh;
+	mix-blend-mode: lighten;
+	position: relative;
+	width: 100%;
+}

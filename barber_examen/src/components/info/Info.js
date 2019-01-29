@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../../../src/Master.css';
 import './info.css';
 
-export default class Nav extends Component {
+export default class Info extends Component {
   render() {
     return (
 	  <div>
