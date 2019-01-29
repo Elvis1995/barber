@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import '../../../src/Master.css';
-import '../../components/Nav/Nav.css';
+import '../../css/Master.css';
+import './Nav.css';
+import { Link } from 'react-router-dom';
+// import Route from 'react-router-dom/Route';
 
 export default class Nav extends Component {
 	constructor() {
@@ -21,9 +23,9 @@ export default class Nav extends Component {
 		});
 	}
 
-	componentWillUnmount () {
-		window.removeEventListener('scroll')
-	}
+	// componentWillUnmount () {
+	// 	window.removeEventListener('scroll')
+	// }
 
   render() {
     return (
@@ -33,11 +35,11 @@ export default class Nav extends Component {
 				<a href="{{ url('intro') }}">
 					<img className="logo" src="/img/logo/logo.png" alt="Logo" />
 				</a>
-				<div className="menu_container">
-					<a href="{{ url('stories') }}" className="button">Startsida</a>
-					<a href="{{ url('concepts') }}" className="button">Boka nu</a>
-					<a href="{{ url('stores') }}" className="button">Kontakt</a>
-				</div>
+					<div className="menu_container">
+						<Link exact to={"/"} className="button">Startsida</Link>
+						<Link to={"/Boka"} className="button">Boka nu</Link>
+						<Link to={"/Kontakt"} className="button">Kontakt</Link>
+					</div>
 			</div>
 		</div>
       </div>

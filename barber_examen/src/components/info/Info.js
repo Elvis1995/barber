@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../../../src/Master.css';
+import '../../css/Master.css';
 import './info.css';
 
 export default class Info extends Component {
