@@ -52,6 +52,7 @@ section#header graphic {
 section#header .wrapper h1 {
 	color: rgba(250,205,95,1);
 	margin: 0 0 15px 0;
+	text-transform: uppercase;
 }
 
 section#header .wrapper h1,
