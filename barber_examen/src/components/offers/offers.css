@@ -1,6 +1,6 @@
 section#offers {
 	/* background-attachment: fixed; */
-	background-image: url(/img/background/offers_bg.png), linear-gradient(-45deg, rgba(55,45,75,1) 0%, rgba(45,52,71,1) 100%);
+	background-image: url(/img/offers/offers_bg.png), linear-gradient(-45deg, rgba(55,45,75,1) 0%, rgba(45,52,71,1) 100%);
 	background-position: center;
 	background-size: cover;
 	/* padding: 130px 0 0 0; */
@@ -13,6 +13,7 @@ section#offers {
 /* cols_three */
 
 section#offers .cols.cols_three {
+	padding-top: 130px;
 	overflow: hidden;
 }
 
@@ -26,11 +27,16 @@ section#offers .cols {
 /* skew */
 
 section#offers .cols_three .col_a .skew {
-	background-image: url(/img/background/herr_offer.png);
+	background-image: url(/img/offers/herr_offer.png);
 }
 
 section#offers .cols_three .col_b .skew {
-	background-image: url(/img/background/dam_offer.png);
+	background-image: url(/img/offers/dam_offer1.png);
+}
+
+section#offers .cols_three .col_c .skew {
+	background-image: url(/img/offers/barn_offer.png
+	);
 }
 
 section#offers .col_a .skew,
