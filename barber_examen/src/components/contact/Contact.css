@@ -1,0 +1,70 @@
+section#contact {
+  background-image: linear-gradient(-45deg, rgb(92, 74, 74) 0%, rgb(43,42,60,1) 100%);
+	min-height: 100vh;
+	position: relative;
+	width: 100%;
+}
+
+section#contact .wrapper{
+  position: relative;
+  display: flex;
+  padding-top: 20vh;
+}
+
+section#contact .wrapper h4 {
+	color: rgba(250,205,95,1);
+	margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+section#contact .wrapper h5,
+section#contact .wrapper p {
+  color: rgba(255,255,255,1);
+  line-height: 1.5;
+}
+
+.contact{
+  max-width: 50%;
+}
+.contact_person {
+  display: flex;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.contact_person:last-child{
+  border-bottom: none;
+}
+
+.contact_person_img {
+  margin: auto;
+  flex: 0.5;
+  text-align: center;
+}
+
+.contact_person_img img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.contact_person_info,
+.contact_company_questions {
+  margin: 20px 0;
+  flex: 1;
+}
+
+.contact_person_story {
+  margin: 15px 0 15px 15px;
+}
+
+.contact_company {
+  flex: 1;
+  padding-left: 80px;
+}
+
+#contact_google_maps {
+  position: relative;
+  overflow: hidden;
+  height: 75%;
+}
