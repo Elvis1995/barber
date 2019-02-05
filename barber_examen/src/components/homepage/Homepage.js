@@ -3,6 +3,7 @@ import Nav from '../nav/Nav';
 import Header from '../header/Header';
 import Info from '../info/Info';
 import Offers from '../offers/Offers';
+import Footer from '../footer/Footer';
 
 export default class Homepage extends Component {
   render() {
@@ -11,7 +12,8 @@ export default class Homepage extends Component {
         <Nav />
         <Header />
         <Info />
-        <Offers />
+		<Offers />
+		<Footer />
       </div>
     );
   }
