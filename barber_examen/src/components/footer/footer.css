@@ -32,5 +32,6 @@ section#footer a:last-of-type {
 section#footer .links i {
 	color: rgba(250,205,95,1);
 	margin-right: 15px;
-    vertical-align: middle;
+	vertical-align: middle;
+	line-height: inherit;
 }

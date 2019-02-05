@@ -17,7 +17,7 @@ section#offers .wrapper {
 /* cols_three */
 
 section#offers .cols.cols_three {
-	padding-top: 130px;
+	/* padding-top: 130px; */
 	overflow: hidden;
 }
 
