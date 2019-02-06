@@ -3,7 +3,7 @@ import Nav from '../nav/Nav';
 import Contact from '../contact/Contact'
 import Footer from '../footer/Footer';
 
-export default class Homepage extends Component {
+export default class Contactpage extends Component {
   render() {
     return (
       <div>
