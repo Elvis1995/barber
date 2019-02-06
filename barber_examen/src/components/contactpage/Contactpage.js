@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '../nav/Nav';
-import Header from '../header/Header';
-import Info from '../info/Info';
-import Offers from '../offers/Offers';
+import Contact from '../contact/Contact'
 import Footer from '../footer/Footer';
 
 export default class Homepage extends Component {
@@ -10,9 +8,7 @@ export default class Homepage extends Component {
     return (
       <div>
         <Nav />
-        <Header />
-        <Info />
-        <Offers />
+        <Contact />
         <Footer />
       </div>
     );

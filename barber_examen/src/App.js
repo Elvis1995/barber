@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Homepage from './components/homepage/Homepage';
-import Contacts from './components/contact/Contact';
+import Contactpage from './components/contactpage/Contactpage';
 import {BrowserRouter as Router , Route} from 'react-router-dom';
 
 let homePage = () => {
@@ -11,7 +11,7 @@ let homePage = () => {
 
 let contact = () => {
   return(
-  <Contacts />
+  <Contactpage />
   );
 }
 
