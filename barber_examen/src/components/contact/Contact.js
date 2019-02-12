@@ -12,10 +12,10 @@ export default class Contacts extends Component {
           <div className="contact">
             <div className="contact_person">
               <div className="contact_person_img">
-                <img src="img/pattern/placeholder-ali.jpg" alt=""/>
+                <img src="img/contact/contact_1.jpg" alt=""/>
               </div>
               <div className="contact_person_info">
-                <h4 className="contact_person_name">Ali Karadag</h4>
+                <h4 className="contact_person_name">Emma lindh</h4>
                 <h5 className="contact_person_title">Chef / Ansvarig</h5>
                 <p className="contact_person_story">Hej! Mig kan du kontakta om du är intresserad av vårt produktbud och vill veta mer</p>
                 <div className="contact_person_touch">
@@ -26,10 +26,10 @@ export default class Contacts extends Component {
             </div>      
             <div className="contact_person">
               <div className="contact_person_img">
-                <img src="img/pattern/placeholder-ali.jpg" alt=""/>
+                <img src="img/contact/contact_2.jpg" alt=""/>
               </div>
               <div className="contact_person_info">
-                <h4 className="contact_person_name">Ali Karadag</h4>
+                <h4 className="contact_person_name">Conny larsson</h4>
                 <h5 className="contact_person_title">Chef / Ansvarig</h5>
                 <p className="contact_person_story">Hej! Mig kan du kontakta om du är intresserad av vårt produktbud och vill veta mer</p>
                 <div className="contact_person_touch">
@@ -40,10 +40,10 @@ export default class Contacts extends Component {
             </div>      
             <div className="contact_person">
               <div className="contact_person_img">
-              <img src="img/pattern/placeholder-ali.jpg" alt=""/>
+              <img src="img/contact/contact_3.jpg" alt=""/>
               </div>
               <div className="contact_person_info">
-                <h4 className="contact_person_name">Ali Karadag</h4>
+                <h4 className="contact_person_name">Sara kakdeg</h4>
                 <h5 className="contact_person_title">Chef / Ansvarig</h5>
                 <p className="contact_person_story">Hej! Mig kan du kontakta om du är intresserad av vårt produktbud och vill veta mer</p>
                 <div className="contact_person_touch">
