@@ -1,9 +1,9 @@
 section#offers {
 	/* background-attachment: fixed; */
 	background-image: url(/img/background/offers.jpg), linear-gradient(-45deg, rgba(55,45,75,1) 50%, rgba(45,52,71,1) 100%);
-	/* background-position: center; */
+	background-position: center;
 	background-size: cover;
-	/* padding: 130px 0 0 0; */
+	padding: 180px 0 0 0;
 	height: 100vh;
 	mix-blend-mode: lighten;
 	position: relative;
@@ -83,7 +83,7 @@ section#offers .cols_three .col .skew h2 {
     left: 50%;
     position: absolute;
     top: 50%;
-    transform: translateY(-100%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
 }
 
 section#offers .cols_three .text h5 {
