@@ -7,3 +7,10 @@
 	background-size: 100% 100%;
 	mix-blend-mode: lighten;
 }
+.booking-calendar .week .day-box .day.booked-day:before {
+	left: 0;
+	transform: skewX(0deg);
+}
+.booking-calendar .week .day-box .day.booked-night:after {
+	display: none;
+}

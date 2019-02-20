@@ -5,13 +5,13 @@ import Nav from '../nav/Nav';
 import Footer from '../footer/Footer';
 
 const bookings = [
-  new Date(2016, 7, 1),
-  new Date(2016, 7, 2),
-  new Date(2016, 7, 3),
-  new Date(2016, 7, 9),
-  new Date(2016, 7, 10),
-  new Date(2016, 7, 11),
-  new Date(2016, 7, 12),
+  new Date(2019, 1, 1),
+  new Date(2019, 1, 2),
+  new Date(2019, 1, 3),
+  new Date(2019, 1, 4),
+  new Date(2019, 1, 5),
+  new Date(2019, 1, 6),
+  new Date(2019, 1, 7),
 ];
 
 export default class Bookingpage extends Component {
