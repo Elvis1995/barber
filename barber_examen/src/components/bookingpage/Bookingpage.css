@@ -1,0 +1,9 @@
+.booking-calendar {
+  margin: 220px 0 80px 0;
+}
+.bookingtest {
+  background-image: url(/img/background/offers.jpg), linear-gradient(-45deg, rgba(55,45,75,1) 50%, rgba(45,52,71,1) 100%);
+	background-position: center;
+	background-size: 100% 100%;
+	mix-blend-mode: lighten;
+}
