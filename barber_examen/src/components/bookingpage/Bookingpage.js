@@ -15,6 +15,17 @@ const bookings = [
 ];
 
 export default class Bookingpage extends Component {
+	componentDidMount = () => {
+		let testen = document.querySelectorAll(".day");
+		let boxtest = document.querySelector(".boxtest");
+
+		for(let i = 0; i < testen.length; i++) {
+			testen[i].addEventListener("click", () => {
+				boxtest.style.display = "block";
+			})
+		}
+	}
+
   render() {
     return (
       <div className="bookingtest">
@@ -22,7 +33,10 @@ export default class Bookingpage extends Component {
         <div className="wrapper">
         <BookingCalendar 
         bookings={bookings}
-        clickable={true} />
+		clickable={true} />
+		<div className="boxtest">
+			<h1>test box</h1>
+		</div>
         </div>
         <Footer />
       </div>
