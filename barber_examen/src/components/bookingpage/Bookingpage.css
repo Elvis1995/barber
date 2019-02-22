@@ -14,3 +14,16 @@
 .booking-calendar .week .day-box .day.booked-night:after {
 	display: none;
 }
+
+/* icons arrows */
+.booking-calendar .header .header-content .icon-previous {
+    left: 130px;
+}
+
+.booking-calendar .header .header-content .icon-next {
+    right: 130px;
+}
+
+.booking-calendar .header .header-content .month-label {
+    pointer-events: none;
+}
