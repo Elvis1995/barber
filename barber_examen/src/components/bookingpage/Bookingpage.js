@@ -35,6 +35,7 @@ export default class Bookingpage extends Component {
         bookings={bookings}
 		clickable={true} />
 		<div className="list">
+		<img className="icons_new close_list" src="https://img.icons8.com/ios-glyphs/50/000000/delete-sign.png" alt="X" />
 			<div className="row">
 				<h5><img className="icons_new" src="https://img.icons8.com/small/24/000000/clock.png" alt="styling" />8:00 am – 8:45 am</h5>
 				<p className="small">1 plats tillgänglig</p>
