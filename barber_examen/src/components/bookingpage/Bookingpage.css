@@ -13,6 +13,7 @@
 /* list */
 
 .list {
+	display: none;
 	margin-top: 300px;
 	background: #f2f2f2;
 	padding: 58px;

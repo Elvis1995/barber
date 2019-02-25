@@ -18,9 +18,14 @@ section#offers .wrapper {
 
 section#offers .cols.cols_three {
 	overflow: hidden;
+	display: flex;
 }
 
 /* cols */
+
+section#offers .col {
+    flex: 1;
+}
 
 section#offers .cols {
     margin: 0;
@@ -74,8 +79,11 @@ section#offers .col_c .skew:after {
 /* text */
 
 section#offers .cols_three .text {
+	display: flex;
+	flex-direction: column;
 	background-color: rgba(255,255,255,1);
 	text-align: center;
+	height: 61%;	
 }
 
 section#offers .cols_three .col .skew h2 {
@@ -95,7 +103,7 @@ section#offers .cols_three .text h5:first-child {
 }
 
 section#offers .cols_three .text .button {
-	margin: 35px 0 50px 0;
+	margin: auto auto 50px;
 }
 
 /* pricing */

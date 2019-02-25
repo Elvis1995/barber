@@ -5,7 +5,7 @@ import './offers.css';
 export default class Offers extends Component {
   render() {
     return (
-	  <div>
+		<div>
 		<section id="offers">
 			<div className="wrapper">
 				<div className="cols cols_three">
