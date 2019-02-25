@@ -14,7 +14,7 @@
 
 .list {
 	margin-top: 330px;
-	background: red;
+	background: #f2f2f2;
 	padding: 58px;
 	z-index: 10;
 	position: absolute;
@@ -34,15 +34,6 @@
 
 .list .row:first-child {
 	border-top: none;
-}
-
-.list .row h4 {
-	/* float: left; */
-	margin: 0;
-}
-
-.list .row p {
-	/* float: right; */
 }
 
 .list .row p.small {
