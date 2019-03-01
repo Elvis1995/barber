@@ -5,36 +5,37 @@ import Nav from '../nav/Nav';
 import Footer from '../footer/Footer';
 
 const bookings = [
-  new Date(2019, 1, 1),
-  new Date(2019, 1, 2),
-  new Date(2019, 1, 3),
-  new Date(2019, 1, 4),
-  new Date(2019, 1, 5),
-  new Date(2019, 1, 6),
-  new Date(2019, 1, 7)
+  new Date(2019, 2, 16),
+  new Date(2019, 3, 21),
+  new Date(2019, 4, 14),
+  new Date(2019, 5, 17),
+  new Date(2019, 4, 11),
+  new Date(2019, 3, 27),
+  new Date(2019, 3, 29)
 ];
 
 export default class Bookingpage extends Component {
-	componentDidMount = () => {
-		let testen = document.querySelectorAll('.day');
-    let calenderList = document.querySelector('.list');
-    let formList = document.querySelector('.confirm_booking');
-    let bookingButton = document.querySelectorAll('.booking');
-    let closeButton = document.querySelectorAll('.close_list');
 
-	for(let i = 0; i < testen.length; i++) {
-		testen[i].addEventListener('click', () => {
-		calenderList.style.display = 'block';
-		});
-	}
+	bookingSystem() {
+		let dayBox = document.querySelectorAll('.day-box');
+		let calenderList = document.querySelector('.list');
+		let formList = document.querySelector('.confirm_booking');
+		let bookingButton = document.querySelectorAll('.booking');
+		let closeButton = document.querySelectorAll('.close_list');
 
-	for(let i = 0; i < bookingButton.length; i++) {
-		bookingButton[i].addEventListener('click', () => {
-		formList.style.display = 'block';
-		});
-	}
+		for(let i = 0; i < dayBox.length; i++) {
+			dayBox[i].addEventListener('click', () => {
+			calenderList.style.display = 'block';
+			console.log('testaren');
+			});
+		}
 
-	console.log(testen);
+		for(let i = 0; i < bookingButton.length; i++) {
+			bookingButton[i].addEventListener('click', () => {
+			formList.style.display = 'block';
+			});
+		}
+
 		for(let i = 0; i < closeButton.length; i++){
 			closeButton[0].addEventListener('click', () => {
 				formList.style.display = 'none';
@@ -43,6 +44,14 @@ export default class Bookingpage extends Component {
 				calenderList.style.display = 'none';
 			});
 		}
+	} 
+		
+	componentDidMount = () => {
+		this.bookingSystem();
+	}
+	
+	componentDidUpdate = () => {
+		console.log('test');
 	}
 
   render() {
