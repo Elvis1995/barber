@@ -54,15 +54,15 @@ export default class Bookingpage extends Component {
 			<div className="confirm_booking">
 				<img className="icons_new close_list" src="https://img.icons8.com/ios-glyphs/50/000000/delete-sign.png" alt="X" />
 				<h3>Fyll i formuläret</h3>
-				<div className="confirm_form">
+				<form className="confirm_form" action="contactform.php" method="post">
 					<label>Namn</label>
-					<input type="text" placeholder="Namn"></input>
+					<input type="text" name="name" placeholder="Namn"></input>
 					<label>Telefonnummer</label>
-					<input type="text" placeholder="Ex. 0762251663"></input>
+					<input type="text" name="phone" placeholder="Ex. 0762251663"></input>
 					<label>Email</label>
-					<input type="text" placeholder="Alfred@hotmail.com"></input>
-					<a href="{{ url('intro') }}" className="button rounded green" data-booking-button>Boka nu</a>
-				</div>
+					<input type="text" name="mail" placeholder="Alfred@hotmail.com"></input>
+					<button className="button rounded green" type="submit" name="submit">Boka nu</button>
+				</form>
 			</div>
 			<div className="list">
 				<img className="icons_new close_list" src="https://img.icons8.com/ios-glyphs/50/000000/delete-sign.png" alt="X" />
