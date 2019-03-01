@@ -1,25 +1,30 @@
 section#contact {
-  background-image: linear-gradient(-45deg, rgb(92, 74, 74) 0%, rgb(43,42,60,1) 100%);
+	/* background-image: linear-gradient(-45deg, rgb(92, 74, 74) 0%, rgb(43,42,60,1) 100%); */
 	min-height: 100vh;
 	position: relative;
-  width: 100%;
-  padding: 80px 0;
+	width: 100%;
+	padding: 80px 0;
+
+	background-image: url(/img/contact/contact_bg.jpg), linear-gradient(-45deg, rgba(55,45,75,1) 50%, rgba(45,52,71,1) 100%);
+	background-position: center;
+	background-size: cover;
+	mix-blend-mode: lighten;
 }
 section#contact .contact{
-  max-width: 50%;
+	max-width: 50%;
 }
 
 section#contact .wrapper{
-  position: relative;
-  display: flex;
-  padding-top: 20vh;
+	position: relative;
+	display: flex;
+	padding-top: 20vh;
 }
 
 section#contact .wrapper h4 {
 	color: rgba(250,205,95,1);
 	margin: 0 0 15px 0;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 
 section#contact .wrapper h5,

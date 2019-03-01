@@ -31,10 +31,10 @@ export default class Offers extends Component {
 							<h2>299kr</h2>
 						</div>
 						<div className="text">
+							<h5><img className="icons_new" src="https://img.icons8.com/material/24/000000/womans-hair.png" alt="cut" />Hårförlägning</h5>
+							<h5><img className="icons_new" src="https://img.icons8.com/material/24/000000/deodorant-spray.png" alt="cut" />Hårfärgning</h5>
 							<h5><img className="icons_new" src="https://img.icons8.com/windows/32/000000/barber-scissors.png" alt="cut" />Klippning</h5>
-							<h5>Hårfärgning</h5>
 							<h5><img className="icons_new" src="https://img.icons8.com/metro/26/000000/womans-hair.png" alt="hair" />Styling</h5>
-							<h5>Hårförlägning</h5>
 							<a href="{{ }}" className="button rounded green" data-booking-button>Boka nu</a>
 						</div>
 					</div>

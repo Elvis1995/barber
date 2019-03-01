@@ -16,9 +16,10 @@ export default class Info extends Component {
 					</div> 
 					<div className="col">
 						<div className="text">
-							<h2>Titel</h2>
-							<p>Hos oss hittar du ett gäng kreativa och nyskapande frisörer som hjälper dig med allt från produktråd och välbehövliga frisyrtips till att fixa en vacker håruppsättning inför festen. Vi erbjuder allt från klippning, färg till tvätt och föning men även komplett styling, bröllop och festupsättning inför fest och bröllop.</p>
-							<p>Hos oss hittar du ett gäng kreativa och nyskapande frisörer som hjälper dig med allt från produktråd och välbehövliga frisyrtips till att fixa en vacker håruppsättning inför festen. Vi erbjuder allt från klippning, färg till tvätt och föning men även komplett styling, bröllop och festupsättning inför fest och bröllop.</p>
+							<h2>DIN PERSONLIGA FRISÖR & BARBERARE I NORSBORG</h2>
+							<p>Alis Klipp & Barbershop är en traditionell barberare och frisörsalong i Norsborg. Vill du unna dig själv eller någon annan en trevlig stund?</p>
+							<p>Våra barberare ser till att helheten blir perfekt, och att din personliga styling är rätt just för dig. Vi har 21 års erfarenhet i branschen och har varit verksamma på Norsborg i 10 år.</p>
+							<p>En barberare har som huvudmål att klippa, sköta om, styla och raka mäns hår. Och det utrymme som en barberare arbetar på kallas barbershop. Det är dock inte bara en plats att vårda om sitt skägg och hår, utan har även blivit en social samlingsplats genom åren. Här träffas folk också för att prata och ha trevligt.</p>
 						</div>
 					</div>
 				</div>
