@@ -70,12 +70,42 @@ p:not(.small) {
 
 /* confirm_booking */
 .confirm_booking {
-	background-color: red;
-	height: auto;
-	margin: 220px 0 0 0;
-	position: relative;
-	/* width: 100%; */
+	background-color: rgba(43,42,60,1);
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position: absolute;
+	width: 50%;
 	z-index: 30;
+}
+
+.confirm_booking h3 {
+	color: rgba(255,255,255,1);
+	margin: 30px 0;
+	text-align: center;
+}
+
+.confirm_booking .confirm_form {
+	margin: 0 auto;
+	width: 70%;
+	position: relative;
+	/* background: red; */
+}
+
+.confirm_booking .confirm_form input {
+	width: 100%;
+}
+
+.confirm_booking .confirm_form .button {
+	margin: 0 0 50px 0;
+}
+
+.confirm_booking .close_list {
+	cursor: pointer;
+	right: 0;
+	position: absolute;
+	right: 25px;
+	top: 25px;
 }
 
 .booking-calendar .week .day-box .day.booked-day:before {

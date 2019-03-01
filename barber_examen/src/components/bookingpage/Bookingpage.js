@@ -36,7 +36,20 @@ export default class Bookingpage extends Component {
     <div className="bookingtest">
     <Nav />
     	<div className="wrapper">
-    	<BookingCalendar bookings={bookings}clickable={true} />
+		<BookingCalendar bookings={bookings}clickable={true} />
+			<div className="confirm_booking">
+				<img className="icons_new close_list" src="https://img.icons8.com/ios-glyphs/50/000000/delete-sign.png" alt="X" />
+				<h3>Fyll i formuläret</h3>
+				<div className="confirm_form">
+					<label>Namn</label>
+					<input type="text" placeholder="Namn"></input>
+					<label>Telefonnummer</label>
+					<input type="text" placeholder="Ex. 0762251663"></input>
+					<label>Email</label>
+					<input type="text" placeholder="Alfred@hotmail.com"></input>
+					<a href="{{ url('intro') }}" className="button rounded green" data-booking-button>Boka nu</a>
+				</div>
+			</div>
 			<div className="list">
       		<img className="icons_new close_list" src="https://img.icons8.com/ios-glyphs/50/000000/delete-sign.png" alt="X" />
         		<div className="row">
