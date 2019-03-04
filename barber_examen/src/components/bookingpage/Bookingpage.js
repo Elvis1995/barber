@@ -15,13 +15,25 @@ const bookings = [
 ];
 
 export default class Bookingpage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+			name: ''
+		};
 
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+	}
+	
 	bookingSystem() {
+		let testare = document.querySelector('.booking-calendar');
 		let dayBox = document.querySelectorAll('.day-box');
 		let calenderList = document.querySelector('.list');
 		let formList = document.querySelector('.confirm_booking');
 		let bookingButton = document.querySelectorAll('.booking');
 		let closeButton = document.querySelectorAll('.close_list');
+		let confirmButton = document.querySelector('.confirm_booking_button');
+		let confirmOrder = document.querySelector('.confirm_order');
 
 		for(let i = 0; i < dayBox.length; i++) {
 			dayBox[i].addEventListener('click', () => {
@@ -44,15 +56,28 @@ export default class Bookingpage extends Component {
 				calenderList.style.display = 'none';
 			});
 		}
+
+		confirmButton.addEventListener('click', () => {
+			confirmOrder.style.display = 'block';
+			testare.style.display = 'none';
+			calenderList.style.display = 'none';
+			formList.style.display = 'none';
+		});
 	} 
 		
 	componentDidMount = () => {
 		this.bookingSystem();
 	}
-	
-	componentDidUpdate = () => {
-		console.log('test');
-	}
+
+	handleChange(event) {
+    this.setState({
+			name: event.target.value
+		});
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+  }
 
   render() {
     return (
@@ -63,14 +88,14 @@ export default class Bookingpage extends Component {
 			<div className="confirm_booking">
 				<img className="icons_new close_list" src="https://img.icons8.com/ios-glyphs/50/000000/delete-sign.png" alt="X" />
 				<h3>Fyll i formuläret</h3>
-				<form className="confirm_form" action="contactform.php" method="post">
+				<form className="confirm_form" action="">
 					<label>Namn</label>
-					<input type="text" name="name" placeholder="Namn"></input>
+					<input type="text" name="name" placeholder="Namn" value={this.state.name} onChange={this.handleChange}></input>
 					<label>Telefonnummer</label>
 					<input type="text" name="phone" placeholder="Ex. 0762251663"></input>
 					<label>Email</label>
 					<input type="text" name="mail" placeholder="Alfred@hotmail.com"></input>
-					<button className="button rounded green" type="submit" name="submit">Boka nu</button>
+					<button className="button rounded green confirm_booking_button" type="button" name="submit">Boka nu</button>
 				</form>
 			</div>
 			<div className="list">
@@ -128,6 +153,9 @@ export default class Bookingpage extends Component {
 					<p className="small">1 plats tillgänglig</p>
 					<button className="button booking" data-booking-button>Boka nu</button>
 				</div>
+			</div>
+			<div className="confirm_order">
+				<h1>Tack <span className="confirm_name">{this.state.name}</span> för bookningen, Du har nu fått ett mail!</h1>
 			</div>
 		</div>
         <Footer />
