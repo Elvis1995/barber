@@ -109,6 +109,24 @@ p:not(.small) {
 	top: 25px;
 }
 
+.confirm_order {
+	display: none;
+	height: 100vh;
+	width: 100%;
+}
+
+.confirm_order h1 {
+	position: relative;
+	color: #fff;
+	top: 50%;
+	text-align: center;
+}
+
+.confirm_name {
+	display: inline;
+	color: rgba(250,205,95,1);
+}
+
 .booking-calendar .week .day-box .day.booked-day:before {
 	left: 0;
 	transform: skewX(0deg);

@@ -6,7 +6,7 @@ import Maps from '../maps/maps'
 export default class Contacts extends Component {
   render() {
     return (
-	  <div>
+    <div>
       <section id="contact">
         <div className="wrapper">
           <div className="contact">
@@ -29,11 +29,11 @@ export default class Contacts extends Component {
                 <img src="img/contact/contact_2.jpg" alt=""/>
               </div>
               <div className="contact_person_info">
-                <h4 className="contact_person_name">Conny larsson</h4>
+                <h4 className="contact_person_name">Conny Larsson</h4>
                 <h5 className="contact_person_title">Chef / Ansvarig</h5>
                 <p className="contact_person_story">Hej! Mig kan du kontakta om du är intresserad av vårt produktbud och vill veta mer</p>
                 <div className="contact_person_touch">
-                  <p>ali.karadag@alisfrisor.se</p>
+                  <p>Conny.Larsson@alisfrisor.se</p>
                   <p>08-531139343</p>
                 </div>
               </div>
@@ -43,11 +43,11 @@ export default class Contacts extends Component {
               <img src="img/contact/contact_3.jpg" alt=""/>
               </div>
               <div className="contact_person_info">
-                <h4 className="contact_person_name">Sara kakdeg</h4>
+                <h4 className="contact_person_name">Sara kärnström</h4>
                 <h5 className="contact_person_title">Chef / Ansvarig</h5>
                 <p className="contact_person_story">Hej! Mig kan du kontakta om du är intresserad av vårt produktbud och vill veta mer</p>
                 <div className="contact_person_touch">
-                  <p>ali.karadag@alisfrisor.se</p>
+                  <p>Sara.karnstrom@alisfrisor.se</p>
                   <p>08-531139343</p>
                 </div>
               </div>

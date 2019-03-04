@@ -5,36 +5,49 @@ import Nav from '../nav/Nav';
 import Footer from '../footer/Footer';
 
 const bookings = [
-  new Date(2019, 1, 1),
-  new Date(2019, 1, 2),
-  new Date(2019, 1, 3),
-  new Date(2019, 1, 4),
-  new Date(2019, 1, 5),
-  new Date(2019, 1, 6),
-  new Date(2019, 1, 7)
+  new Date(2019, 2, 16),
+  new Date(2019, 3, 21),
+  new Date(2019, 4, 14),
+  new Date(2019, 5, 17),
+  new Date(2019, 4, 11),
+  new Date(2019, 3, 27),
+  new Date(2019, 3, 29)
 ];
 
 export default class Bookingpage extends Component {
-	componentDidMount = () => {
-		let testen = document.querySelectorAll('.day');
-    let calenderList = document.querySelector('.list');
-    let formList = document.querySelector('.confirm_booking');
-    let bookingButton = document.querySelectorAll('.booking');
-    let closeButton = document.querySelectorAll('.close_list');
+  constructor(props) {
+    super(props);
+    this.state = {
+			name: ''
+		};
 
-	for(let i = 0; i < testen.length; i++) {
-		testen[i].addEventListener('click', () => {
-		calenderList.style.display = 'block';
-		});
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 	}
+	
+	bookingSystem() {
+		let testare = document.querySelector('.booking-calendar');
+		let dayBox = document.querySelectorAll('.day-box');
+		let calenderList = document.querySelector('.list');
+		let formList = document.querySelector('.confirm_booking');
+		let bookingButton = document.querySelectorAll('.booking');
+		let closeButton = document.querySelectorAll('.close_list');
+		let confirmButton = document.querySelector('.confirm_booking_button');
+		let confirmOrder = document.querySelector('.confirm_order');
 
-	for(let i = 0; i < bookingButton.length; i++) {
-		bookingButton[i].addEventListener('click', () => {
-		formList.style.display = 'block';
-		});
-	}
+		for(let i = 0; i < dayBox.length; i++) {
+			dayBox[i].addEventListener('click', () => {
+			calenderList.style.display = 'block';
+			console.log('testaren');
+			});
+		}
 
-	console.log(testen);
+		for(let i = 0; i < bookingButton.length; i++) {
+			bookingButton[i].addEventListener('click', () => {
+			formList.style.display = 'block';
+			});
+		}
+
 		for(let i = 0; i < closeButton.length; i++){
 			closeButton[0].addEventListener('click', () => {
 				formList.style.display = 'none';
@@ -43,7 +56,28 @@ export default class Bookingpage extends Component {
 				calenderList.style.display = 'none';
 			});
 		}
+
+		confirmButton.addEventListener('click', () => {
+			confirmOrder.style.display = 'block';
+			testare.style.display = 'none';
+			calenderList.style.display = 'none';
+			formList.style.display = 'none';
+		});
+	} 
+		
+	componentDidMount = () => {
+		this.bookingSystem();
 	}
+
+	handleChange(event) {
+    this.setState({
+			name: event.target.value
+		});
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+  }
 
   render() {
     return (
@@ -54,14 +88,14 @@ export default class Bookingpage extends Component {
 			<div className="confirm_booking">
 				<img className="icons_new close_list" src="https://img.icons8.com/ios-glyphs/50/000000/delete-sign.png" alt="X" />
 				<h3>Fyll i formuläret</h3>
-				<form className="confirm_form" action="contactform.php" method="post">
+				<form className="confirm_form" action="">
 					<label>Namn</label>
-					<input type="text" name="name" placeholder="Namn"></input>
+					<input type="text" name="name" placeholder="Namn" value={this.state.name} onChange={this.handleChange}></input>
 					<label>Telefonnummer</label>
 					<input type="text" name="phone" placeholder="Ex. 0762251663"></input>
 					<label>Email</label>
 					<input type="text" name="mail" placeholder="Alfred@hotmail.com"></input>
-					<button className="button rounded green" type="submit" name="submit">Boka nu</button>
+					<button className="button rounded green confirm_booking_button" type="button" name="submit">Boka nu</button>
 				</form>
 			</div>
 			<div className="list">
@@ -119,6 +153,9 @@ export default class Bookingpage extends Component {
 					<p className="small">1 plats tillgänglig</p>
 					<button className="button booking" data-booking-button>Boka nu</button>
 				</div>
+			</div>
+			<div className="confirm_order">
+				<h1>Tack <span className="confirm_name">{this.state.name}</span> för bookningen, Du har nu fått ett mail!</h1>
 			</div>
 		</div>
         <Footer />
