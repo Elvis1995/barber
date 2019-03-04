@@ -29,20 +29,20 @@ export default class Nav extends Component {
 
   render() {
     return (
-	  <div>
-		<div className={this.state.scrolled ? 'nav scrolled' : 'nav'}>
-			<div className="wrapper">
-				<Link to={"/"}>
-					<img className="logo" src="/img/logo/logo.png" alt="Logo" />
-				</Link>
-					<div className="menu_container">
-						<Link to={"/"} className="button">Startsida</Link>
-						<Link to={"/Boka"} className="button">Boka nu</Link>
-						<Link to={"/Kontakt"} className="button">Kontakt</Link>
-					</div>
+		<div>
+			<div className={this.state.scrolled ? 'nav scrolled' : 'nav'}>
+				<div className="wrapper">
+					<Link to={"/"}>
+						<img className="logo" src="/img/logo/logo.png" alt="Logo" />
+					</Link>
+						<div className="menu_container">
+							<Link to={"/"} className="button">Startsida</Link>
+							<Link to={"/Boka"} className="button">Boka nu</Link>
+							<Link to={"/Kontakt"} className="button">Kontakt</Link>
+						</div>
+				</div>
 			</div>
 		</div>
-      </div>
     )
   }
 }
