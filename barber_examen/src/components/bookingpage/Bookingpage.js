@@ -62,6 +62,9 @@ export default class Bookingpage extends Component {
 			testare.style.display = 'none';
 			calenderList.style.display = 'none';
 			formList.style.display = 'none';
+			setTimeout(function() {
+				window.location.reload();
+			}, 3150);
 		});
 	} 
 		

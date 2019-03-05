@@ -3,6 +3,11 @@
 	padding: 0;
 } 
 
+html,body {
+	-webkit-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 90%;
@@ -320,4 +325,23 @@ textarea {
 .checkbox:checked + label:before {
 	background: rgba(38,166,91,1);
 	box-shadow: 0 0 0 3px rgba(0,0,0,0.12);
+}
+
+/* Animation */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
