@@ -59,23 +59,6 @@ section#offers .col_c .skew {
     width: 100%;
 } 
 
-/* :after */
-
-/* section#offers .col_a .skew:after,
-section#offers .col_b .skew:after,
-section#offers .col_c .skew:after {
-    background-color: rgba(242,242,242,1);
-    bottom: -67px;
-	content: '';
-    display: block;
-    height: 109px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transform: rotate(-4deg);
-    width: 120%;
-} */
-
 /* text */
 
 section#offers .cols_three .text {
@@ -128,4 +111,48 @@ section#offers .col:nth-child(3) {
 section#offers .icons_new {
 	vertical-align: middle;
     margin: 0 10px 0 0;
+}
+
+@media only screen and (max-width: 900px) {
+	section#offers {
+		/* background-attachment: fixed; */
+		background-image: none;
+		padding: 0;
+		height: 100%;
+	}
+
+	section#offers .wrapper {
+		max-width: 100%;
+	}
+
+	/* cols_three */
+
+	section#offers .cols.cols_three {
+		display: initial;
+	}
+
+	/* cols */
+
+	section#offers .col {
+		flex: 1;
+	}
+
+	section#offers .cols {
+		margin: 0;
+		width: 100%;
+	}
+
+	section#offers .col:nth-child(1), section#offers .col:nth-child(2) {
+		margin-right: 30px;
+		width: 100%;
+	}
+
+	section#offers .col:nth-child(3) {
+		width: 100%;
+	}
+
+	section#offers .cols_three .text .button {
+		margin: 30px auto 50px;
+		font-size: 20px;
+	}
 }
