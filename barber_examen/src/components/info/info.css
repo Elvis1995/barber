@@ -31,3 +31,21 @@ section#info .text {
 section#info h2 {
 	margin: 0 0 15px 0;
 }
+
+@media only screen and (max-width: 900px) {
+	section#info {
+		padding: 0px;
+	}
+
+	section#info .wrapper {
+		max-width: 100%;
+	}
+
+	section#info .col {
+		width: 100%;
+	}
+
+	section#info .text {
+		padding: 30px 50px;
+	}
+}

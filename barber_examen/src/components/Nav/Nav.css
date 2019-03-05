@@ -188,9 +188,10 @@
 	}
 
 	.nav .wrapper a img {
-		top: 5px;
-		position: relative;
-		width: 55%;
+		top: 50%;
+		position: absolute;
+		width: 45%;
+		transform: translateY(-50%);
 	}
 
 	.nav .wrapper {

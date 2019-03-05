@@ -3,6 +3,7 @@
 section#header {
 	background-image: linear-gradient(-45deg, rgba(55,45,75,1) 0%, rgba(45,52,71,1) 100%);
 	min-height: 100vh;
+	height: 100%;
 	position: relative;
 	width: 100%;
 }
@@ -68,5 +69,45 @@ section#header .wrapper p {
 
 section#header .button {
 	margin: 30px 0 0 0;
+}
+
+@media only screen and (max-width: 900px) {
+	section#header .graphic {
+		display: none;
+	}
+
+	section#header .wrapper {
+		padding: 130px 50px 50px 50px;
+    	width: calc(100% - 100px);
+	}
+
+	/* header - text */
+
+	section#header .wrapper h1 {
+		font-size: 30px;
+		line-height: 35px;
+		margin: 0 0 30px 0;
+	}
+
+	section#header .wrapper h1 span {
+		display: initial;
+	}
+
+	section#header .wrapper h1,
+	section#header .wrapper p {
+		max-width: 100%;
+	}
+
+	section#header .wrapper p {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	/* header - button */
+
+	section#header .button {
+		margin: 30px 0 0 0;
+		font-size: 20px;
+	}
 }
 
