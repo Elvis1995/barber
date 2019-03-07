@@ -219,16 +219,15 @@
 	}
 
 	.nav .links {
-		background-color: rgba(43,42,60,1);
-		height: 0;
-		left: 0px;
-		opacity: 0;
-		pointer-events: none;
-		position: fixed;
-		top: 0px;
-		transition: opacity 300ms ease-out;
-		width: 100vw;
-		z-index: 10;
+		display: none;
+    height: 100vh;
+    left: 0px;
+    pointer-events: none;
+    position: fixed;
+    top: 0px;
+    background-color: red;
+    transition: opacity 300ms ease-out;
+    width: 100%;
 	}
 
 	.nav .links.in,
@@ -271,18 +270,16 @@
 
 	.nav .links ul {
 		left: 50%;
-		opacity: 0;
 		padding: 0px;
-		pointer-events: none;
 		position: absolute;
 		text-align: center;
 		top: 50%;
 		transform: translateY(-50%) translateX(-50%);
 		width: 100%;
-		z-index: 2;
+		z-index: 90;
 	}
 
-	.nav[data-animate="in"] .links ul a {
+	.nav .links ul a {
 		color: rgba(255,255,255,1);
 		display: block;
 		height: 100px;
@@ -290,53 +287,4 @@
 		margin: 10px 0px;
 		width: 100%;
 	}
-
-	.nav:not(.intro) .links ul a.button.active {
-		color: rgba(250,205,95,1);
-	}
-
-	.nav .links ul a[data-href="contact"],
-	.nav .links ul a[data-href="stories"],
-	.nav .links ul a[data-href="concepts"],
-	.nav .links ul a[data-href="stores"],
-	.nav .links ul div.flag {
-		opacity: 0;
-	}
-
-	.nav[data-animate="in"]  .links.in ul a[data-href="stories"] {
-		animation: left_in 150ms ease-out 150ms forwards;
-	}
-
-	.nav[data-animate="in"]  .links.in ul a[data-href="concepts"] {
-		animation: left_in 150ms ease-out 225ms forwards;
-	}
-
-	.nav[data-animate="in"]  .links.in ul a[data-href="stores"] {
-		animation: left_in 150ms ease-out 300ms forwards;
-	}
-
-	.nav[data-animate="in"]  .links.in ul a[data-href="contact"] {
-		animation: left_in 150ms ease-out 375ms forwards;
-	}
-
-	.nav[data-animate="in"]  .links.in ul div.flag:nth-of-type(1) {
-		animation: up_in_mobile 150ms ease-out 450ms forwards;
-	}
-
-	.nav[data-animate="in"]  .links.in ul div.flag:nth-of-type(2) {
-		animation: up_in_mobile 150ms ease-out 525ms forwards;
-	}
-
-	.nav[data-animate="in"]  .links.in ul div.flag:nth-of-type(3) {
-		animation: up_in_mobile 150ms ease-out 600ms forwards;
-	}
-
-	.nav[data-animate="in"]  .links.in ul div.flag:nth-of-type(4) {
-		animation: up_in_mobile 150ms ease-out 675ms forwards;
-	}
-
-	.nav[data-animate="in"]  .links.in ul div.flag:nth-of-type(5) {
-		animation: up_in_mobile 150ms ease-out 725ms forwards;
-	}
-
 }

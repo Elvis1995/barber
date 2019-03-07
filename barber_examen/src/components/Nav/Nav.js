@@ -9,6 +9,7 @@ export default class Nav extends Component {
 		super();
 		this.state = {
 			scrolled: false,
+			open: false
 		}
 	}
 
@@ -21,7 +22,21 @@ export default class Nav extends Component {
 				this.setState({ scrolled: false });
 			}
 		});
-	}
+
+			let openHamburger = document.querySelector('.hamburger');
+			let menuContainer = document.querySelector('.links');
+			openHamburger.addEventListener('click', () => {
+				if(this.state.open === false) {	
+					menuContainer.style.display = 'block';
+					this.setState({open : true});
+				}
+				else if(this.state.open === true) {
+					menuContainer.style.display = 'none';
+					this.setState({open : false});
+				}
+			});
+		}
+
 
 	// componentWillUnmount () {
 	// 	window.removeEventListener('scroll')
