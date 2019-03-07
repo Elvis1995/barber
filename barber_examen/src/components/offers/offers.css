@@ -162,6 +162,10 @@ section#offers .icons_new {
 		width: 100%;
 	}
 
+	section#offers .skew h2 {
+		font-size: 38px;
+	}
+
 	section#offers .price h2 {
 		font-size: 32px;
 	}
