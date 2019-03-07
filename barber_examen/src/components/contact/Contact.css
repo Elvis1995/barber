@@ -72,3 +72,38 @@ section#contact .wrapper p {
   overflow: hidden;
   height: 75%;
 }
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+  .contact_person_info {
+    margin: 20px;
+  }
+  .contact_company {
+    padding-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section#contact {
+    padding: 80px 0 0 0;
+  }
+  section#contact .wrapper{
+    display: block;
+    padding-top: 5vh;
+  }
+  section#contact .contact {
+    max-width: 100%;
+  }
+  .contact_person {
+    flex-direction: column;
+    padding-top: 5vh;
+  }
+  .contact_person:last-child {
+    border-bottom: 1px solid #f6f6f6;
+  }
+  .contact_company {
+    padding-left: 0;
+  }
+  #contact_google_maps {
+    height: 500px;
+  }
+}

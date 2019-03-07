@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import BookingCalendar from 'react-booking-calendar';
-import './Bookingpage.css';
 import Nav from '../nav/Nav';
 import Footer from '../footer/Footer';
+import './Bookingpage.css';
 
 const bookings = [
   new Date(2019, 2, 16),
