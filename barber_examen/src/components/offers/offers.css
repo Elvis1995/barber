@@ -69,6 +69,11 @@ section#offers .cols_three .text {
 	height: 61%;	
 }
 
+section#offers .price h2 {
+	margin: 0;
+	font-size: 38px;
+}
+
 section#offers .cols_three .col .skew h2 {
 	color: rgba(250,205,95,1);
     left: 50%;
@@ -155,6 +160,10 @@ section#offers .icons_new {
 
 	section#offers .col:nth-child(3) {
 		width: 100%;
+	}
+
+	section#offers .price h2 {
+		font-size: 32px;
 	}
 
 	section#offers .cols_three .text .button {
