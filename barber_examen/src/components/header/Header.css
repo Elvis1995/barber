@@ -71,6 +71,43 @@ section#header .button {
 	margin: 30px 0 0 0;
 }
 
+@media only screen and (min-width: 1300px) {
+	/* header - text */
+
+	section#header .wrapper h1, 
+	section#header .wrapper p {
+		max-width: 55%;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+	
+	/* header - text */
+
+	section#header .wrapper h1 {
+		max-width: 80%;
+	}
+
+	section#header .wrapper h1 {
+		font-size: 50px;
+		line-height: 55px;
+		margin: 0 0 30px 0;
+	}
+
+	section#header .wrapper p {
+		font-size: 20px;
+		margin: 0;
+		max-width: 60%;
+	}
+
+	/* header - button */
+
+	section#header .button {
+		margin: 30px 0 0 0;
+		font-size: 22px;
+	}
+}
+
 @media only screen and (max-width: 900px) {
 	section#header .graphic {
 		display: none;
