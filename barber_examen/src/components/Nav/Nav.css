@@ -178,7 +178,7 @@
 	}
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 900px) {
 
 	.nav {
 		background-blend-mode: soft-light;
@@ -190,7 +190,7 @@
 	.nav .wrapper a img {
 		top: 50%;
 		position: absolute;
-		width: 45%;
+		max-width: 45%;
 		transform: translateY(-50%);
 	}
 

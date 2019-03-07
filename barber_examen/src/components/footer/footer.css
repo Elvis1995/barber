@@ -35,3 +35,11 @@ section#footer .links i {
 	vertical-align: middle;
 	line-height: inherit;
 }
+
+@media only screen and (max-width: 900px) {
+	section#footer .links a {
+		border-right: none;
+		display: table-row-group;
+		font-size: 12px;
+	}
+}
