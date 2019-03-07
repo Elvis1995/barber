@@ -32,7 +32,7 @@ section#info h2 {
 	margin: 0 0 15px 0;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
 	section#info {
 		padding: 0px;
 	}
@@ -47,5 +47,16 @@ section#info h2 {
 
 	section#info .text {
 		padding: 30px 50px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	section#info h2 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+	section#info .text {
+		padding: 30px;
 	}
 }
