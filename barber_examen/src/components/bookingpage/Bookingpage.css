@@ -1,11 +1,11 @@
 .booking-calendar {
-	  margin: 220px auto 80px auto;
-	  position: relative;
-	  width: 50%;
+	margin: 220px auto 80px auto;
+	position: relative;
+	width: 50%;
 }
 
 .bookingtest {
-  	background-image: url(/img/background/offers.jpg), linear-gradient(-45deg, rgba(55,45,75,1) 50%, rgba(45,52,71,1) 100%);
+	background-image: url(/img/background/offers.jpg), linear-gradient(-45deg, rgba(55, 45, 75, 1) 50%, rgba(45, 52, 71, 1) 100%);
 	background-position: center;
 	background-size: 100% 100%;
 	mix-blend-mode: lighten;
@@ -70,7 +70,7 @@ p:not(.small) {
 
 /* confirm_booking */
 .confirm_booking {
-	background-color: rgba(43,42,60,1);
+	background-color: rgba(43, 42, 60, 1);
 	top: 60%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
@@ -81,7 +81,7 @@ p:not(.small) {
 }
 
 .confirm_booking h3 {
-	color: rgba(255,255,255,1);
+	color: rgba(255, 255, 255, 1);
 	margin: 30px 0;
 	text-align: center;
 }
@@ -125,13 +125,14 @@ p:not(.small) {
 
 .confirm_name {
 	display: inline;
-	color: rgba(250,205,95,1);
+	color: rgba(250, 205, 95, 1);
 }
 
 .booking-calendar .week .day-box .day.booked-day:before {
 	left: 0;
 	transform: skewX(0deg);
 }
+
 .booking-calendar .week .day-box .day.booked-night:after {
 	display: none;
 }
@@ -139,15 +140,15 @@ p:not(.small) {
 /* icons arrows */
 
 .booking-calendar .header .header-content .icon-previous {
-    left: 130px;
+	left: 130px;
 }
 
 .booking-calendar .header .header-content .icon-next {
-    right: 130px;
+	right: 130px;
 }
 
 .booking-calendar .header .header-content .month-label {
-    pointer-events: none;
+	pointer-events: none;
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
@@ -163,30 +164,31 @@ p:not(.small) {
 		right: 80px;
 	}
 
-		/* list */
-		.list {
-			margin-top: 0px;
-			background: #f2f2f2;
-			width: 100%;
-			position: relative;
-			margin-bottom: 130px;
-			z-index: 99;
-		}
-	
-		/* confirm_booking */
-		.confirm_booking {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			z-index: 999;
-			width: 90%;
-		}
+	/* list */
+	.list {
+		margin-top: 0px;
+		background: #f2f2f2;
+		width: 100%;
+		position: relative;
+		margin-bottom: 130px;
+		z-index: 99;
+	}
+
+	/* confirm_booking */
+	.confirm_booking {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		z-index: 999;
+		width: 90%;
+	}
 }
 
 @media only screen and (max-width: 900px) {
 	.bookingtest {
 		min-height: 750px;
 	}
+
 	.booking-calendar {
 		width: 100%;
 	}
@@ -227,6 +229,4 @@ p:not(.small) {
 		transform: initial;
 		margin-top: 30px;
 	}
-	
-	
 }

@@ -8,19 +8,19 @@ let homePage = () => {
   return(
   <Homepage />
   );
-}
+};
 
 let BookingPage = () => {
   return(
   <Bookingpage />
   );
-}
+};
 
 let contact = () => {
   return(
   <Contactpage />
   );
-}
+};
 
 
 class App extends Component {

@@ -1,9 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
-} 
+}
 
-html,body {
+html,
+body {
 	height: 100%;
 	width: 100%;
 	-webkit-animation: fadein 1s;
@@ -13,7 +14,7 @@ html,body {
 .wrapper {
 	margin: 0 auto;
 	max-width: 90%;
-    overflow: hidden;
+	overflow: hidden;
 	width: 1600px;
 }
 
@@ -21,13 +22,13 @@ html,body {
 
 h1 {
 	font-family: 'Poppins', sans-serif;
-    font-size: 55px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 60px;
+	font-size: 55px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 60px;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
 	h1 {
 		font-size: 30px;
 		line-height: 35px;
@@ -44,13 +45,13 @@ h1 span {
 
 h2 {
 	font-family: 'Poppins', sans-serif;
-    font-size: 45px;
-    font-weight: 200;
-    letter-spacing: 2px;
-    line-height: 53px;
+	font-size: 45px;
+	font-weight: 200;
+	letter-spacing: 2px;
+	line-height: 53px;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
 	h2 {
 		font-weight: 600;
 		font-size: 24px;
@@ -63,9 +64,9 @@ h2 {
 
 h3 {
 	font-family: 'Raleway', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 45px;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 45px;
 }
 
 /* h4 */
@@ -73,34 +74,34 @@ h3 {
 h4 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 32px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    line-height: 40px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	line-height: 40px;
 }
 
 /* h5 */
 
 h5 {
 	font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    font-weight: 400;
+	font-size: 22px;
+	font-weight: 400;
 	letter-spacing: 2px;
-    line-height: 27px;
+	line-height: 27px;
 }
 
 /* p */
 
 p {
 	font-size: 21px;
-    font-weight: 400;
-    line-height: 30px;
+	font-weight: 400;
+	line-height: 30px;
 }
 
 p.small {
-	color: rgba(128,128,128,1);
+	color: rgba(128, 128, 128, 1);
 	font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+	font-weight: 400;
+	line-height: 27px;
 }
 
 /* button */
@@ -122,9 +123,9 @@ a.button * {
 /* types */
 
 .button.rounded {
-	background-color: rgba(242,242,242,1);
+	background-color: rgba(242, 242, 242, 1);
 	border-radius: 30px;
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 	display: inline-block;
 	filter: invert(0) brightness(1);
 	font-family: 'Poppins', sans-serif;
@@ -152,8 +153,8 @@ a.button * {
 }
 
 .button.booking {
-	background-color: rgba(47,198,84,1);
-	color: rgba(255,255,255,1);
+	background-color: rgba(47, 198, 84, 1);
+	color: rgba(255, 255, 255, 1);
 	display: inline-block;
 	filter: invert(0) brightness(1);
 	font-family: 'Poppins', sans-serif;
@@ -169,13 +170,13 @@ a.button * {
 
 .button.back {
 	border-radius: 100%;
-    height: 30px;
-    left: calc(50% - 1600px / 2 - 80px);
-    padding: 20px;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%) translateZ(0) translateX(-50%);
-    width: 30px;
+	height: 30px;
+	left: calc(50% - 1600px / 2 - 80px);
+	padding: 20px;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%) translateZ(0) translateX(-50%);
+	width: 30px;
 }
 
 .button.rounded.utforska_responsive {
@@ -190,37 +191,37 @@ a.button * {
 }
 
 .button.back.neutral i {
-    float: initial;
-    left: 50%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%) translateZ(0);
+	float: initial;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%) translateZ(0);
 }
 
 /* color variations */
 
 .button.green {
-	background-color: rgba(47,198,84,1);
-	color: rgba(255,255,255,1);
+	background-color: rgba(47, 198, 84, 1);
+	color: rgba(255, 255, 255, 1);
 }
 
 .button.neutral {
-	background-color: rgba(45,52,71,1);
-	color: rgba(255,255,255,1);
+	background-color: rgba(45, 52, 71, 1);
+	color: rgba(255, 255, 255, 1);
 	transition: background-color 150ms ease-out, color 150ms ease-out;
 }
 
 .button.negative {
-	background-color: rgba(198,47,47,1);
-	color: rgba(255,255,255,1);
+	background-color: rgba(198, 47, 47, 1);
+	color: rgba(255, 255, 255, 1);
 	transition: background-color 150ms ease-out, color 150ms ease-out;
 }
 
 .button.neutral:hover,
 .button.neutral_active {
-	background-color: rgba(250,205,95,1);
-	color: rgba(45,52,71,1);
+	background-color: rgba(250, 205, 95, 1);
+	color: rgba(45, 52, 71, 1);
 	filter: none;
 }
 
@@ -242,10 +243,10 @@ button[type="submit"].rounded {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-    height: 100%;
+	height: 100%;
 	position: absolute;
 	pointer-events: none;
-    width: 100%;
+	width: 100%;
 }
 
 /* columns */
@@ -268,7 +269,7 @@ input[type="text"],
 input[type="checkbox"],
 input[type="password"],
 textarea {
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255, 255, 255, 1);
 	box-sizing: border-box;
 	border: 0px;
 	border-radius: 10px;
@@ -283,11 +284,11 @@ textarea {
 input.error,
 textarea.error {
 	background-color: rgba(236, 172, 172, 1);
-	border: 2px solid rgba(198,47,47,1);
+	border: 2px solid rgba(198, 47, 47, 1);
 }
 
 label {
-	color: rgb(250,205,95,1);
+	color: rgb(250, 205, 95, 1);
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -313,10 +314,10 @@ textarea {
 	position: absolute;
 }
 
-.checkbox + label {
+.checkbox+label {
 	/* background-color: rgba(248,248,248,1); */
 	border-radius: 30px;
-	color: rgba(255,255,255,1);
+	color: rgba(255, 255, 255, 1);
 	cursor: pointer;
 	font-size: 22px;
 	line-height: 80px;
@@ -325,12 +326,12 @@ textarea {
 	max-width: 600px;
 }
 
-.checkbox + label {
+.checkbox+label {
 	margin-bottom: 80px;
 }
 
-.checkbox + label:before {
-	background: rgba(255,255,255,1);
+.checkbox+label:before {
+	background: rgba(255, 255, 255, 1);
 	border-radius: 100%;
 	content: '';
 	display: inline-block;
@@ -341,9 +342,9 @@ textarea {
 	width: 30px;
 }
 
-.checkbox:checked + label:before {
-	background: rgba(38,166,91,1);
-	box-shadow: 0 0 0 3px rgba(0,0,0,0.12);
+.checkbox:checked+label:before {
+	background: rgba(38, 166, 91, 1);
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
 /* Animation */
@@ -354,6 +355,7 @@ textarea {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -363,6 +365,7 @@ textarea {
 	0% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -375,10 +378,12 @@ textarea {
 		filter: blur(50px);
 		opacity: 0;
 	}
+
 	50% {
 		filter: blur(0px);
 		opacity: 1;
 	}
+
 	100% {
 		filter: blur(50px);
 		opacity: 0;
@@ -387,31 +392,38 @@ textarea {
 
 @keyframes pulsate {
 	0% {
-	  transform: scale(1);
+		transform: scale(1);
 	}
-  
+
 	50% {
-	  transform: scale(1.2);
+		transform: scale(1.2);
 	}
-  
+
 	100% {
-	  transform: scale(1);
+		transform: scale(1);
 	}
 }
 
 /* bounce */
 
 @keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-	  transform: translateY(0);
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
 	}
+
 	40% {
-	  transform: translateY(-12px);
+		transform: translateY(-12px);
 	}
+
 	60% {
-	  transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
-  }
+}
 
 /* Down */
 
@@ -421,6 +433,7 @@ textarea {
 		opacity: 0;
 		transform: translateY(-10px) translateZ(0px);
 	}
+
 	100% {
 		filter: blur(0px);
 		opacity: 1;
@@ -434,6 +447,7 @@ textarea {
 		opacity: 0;
 		transform: translateY(-10px) translateX(-50px) translateZ(0px);
 	}
+
 	100% {
 		filter: blur(0px);
 		opacity: 1;
@@ -447,6 +461,7 @@ textarea {
 		opacity: 1;
 		transform: translateY(0px) translateZ(0px);
 	}
+
 	100% {
 		filter: blur(4px);
 		opacity: 0;
@@ -460,6 +475,7 @@ textarea {
 		opacity: 1;
 		transform: translateY(0px) translateX(0px) translateZ(0px);
 	}
+
 	100% {
 		filter: blur(4px);
 		opacity: 0;
@@ -476,6 +492,7 @@ textarea {
 		opacity: 0;
 		transform: translateY(10px) translateZ(0px);
 	}
+
 	100% {
 		filter: blur(0px);
 		opacity: 1;
@@ -489,6 +506,7 @@ textarea {
 		opacity: 0;
 		transform: translateY(10px) translateX(50px) translateZ(0px);
 	}
+
 	100% {
 		filter: blur(0px);
 		opacity: 1;
@@ -502,6 +520,7 @@ textarea {
 		opacity: 1;
 		transform: translateY(0px) translateZ(0px);
 	}
+
 	100% {
 		filter: blur(4px);
 		opacity: 0;
@@ -514,6 +533,7 @@ textarea {
 		opacity: 0;
 		transform: translateY(10px) translateZ(0px);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateY(0px) translateZ(0px);
@@ -526,6 +546,7 @@ textarea {
 		opacity: 1;
 		transform: translateY(0px) translateX(0px) translateZ(0px);
 	}
+
 	100% {
 		filter: blur(4px);
 		opacity: 0;
@@ -543,6 +564,7 @@ textarea {
 		opacity: 0;
 		transform: translateX(-100px) translateZ(0px);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateX(0px) translateZ(0px);
@@ -556,6 +578,7 @@ textarea {
 		opacity: 0;
 		transform: scale(0.95) translateZ(0px);
 	}
+
 	100% {
 		opacity: 1;
 		transform: scale(1) translateZ(0px);
@@ -567,9 +590,9 @@ textarea {
 		opacity: 1;
 		transform: scale(1) translateZ(0px);
 	}
+
 	100% {
 		opacity: 0;
 		transform: scale(0.95) translateZ(0px);
 	}
 }
-

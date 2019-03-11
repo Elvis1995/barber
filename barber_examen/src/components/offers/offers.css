@@ -1,6 +1,6 @@
 section#offers {
 	/* background-attachment: fixed; */
-	background-image: url(/img/background/offers.jpg), linear-gradient(-45deg, rgba(55,45,75,1) 50%, rgba(45,52,71,1) 100%);
+	background-image: url(/img/background/offers.jpg), linear-gradient(-45deg, rgba(55, 45, 75, 1) 50%, rgba(45, 52, 71, 1) 100%);
 	background-position: center;
 	background-size: cover;
 	padding: 180px 0 0 0;
@@ -24,11 +24,11 @@ section#offers .cols.cols_three {
 /* cols */
 
 section#offers .col {
-    flex: 1;
+	flex: 1;
 }
 
 section#offers .cols {
-    margin: 0;
+	margin: 0;
 	width: 100%;
 }
 
@@ -44,29 +44,29 @@ section#offers .cols_three .col_b .skew {
 
 section#offers .cols_three .col_c .skew {
 	background-image: url(/img/offers/barn_offer.png
-	);
+);
 }
 
 section#offers .col_a .skew,
 section#offers .col_b .skew,
 section#offers .col_c .skew {
-	background-color: rgb(52,73,94,1);
+	background-color: rgb(52, 73, 94, 1);
 	background-size: cover;
-    background-position: center;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-} 
+	background-position: center;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
 
 /* text */
 
 section#offers .cols_three .text {
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255, 255, 255, 1);
 	text-align: center;
-	height: 61%;	
+	height: 61%;
 }
 
 section#offers .price h2 {
@@ -75,11 +75,11 @@ section#offers .price h2 {
 }
 
 section#offers .cols_three .col .skew h2 {
-	color: rgba(250,205,95,1);
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) translateX(-50%);
+	color: rgba(250, 205, 95, 1);
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
 }
 
 section#offers .cols_three .text h5 {
@@ -97,25 +97,26 @@ section#offers .cols_three .text .button {
 /* pricing */
 
 section#offers .cols_three .price {
-	background-color: rgba(242,242,242,1);
+	background-color: rgba(242, 242, 242, 1);
 	text-align: center;
 	padding: 15px 0;
 }
 
-section#offers .col:nth-child(1), section#offers .col:nth-child(2) {
+section#offers .col:nth-child(1),
+section#offers .col:nth-child(2) {
 	margin-right: 30px;
-    width: calc(33% - 20px);
+	width: calc(33% - 20px);
 }
 
 section#offers .col:nth-child(3) {
-    width: calc(34% - 20px);
+	width: calc(34% - 20px);
 }
 
 /* icons_new */
 
 section#offers .icons_new {
 	vertical-align: middle;
-    margin: 0 10px 0 0;
+	margin: 0 10px 0 0;
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
@@ -153,7 +154,8 @@ section#offers .icons_new {
 		width: 100%;
 	}
 
-	section#offers .col:nth-child(1), section#offers .col:nth-child(2) {
+	section#offers .col:nth-child(1),
+	section#offers .col:nth-child(2) {
 		margin-right: 30px;
 		width: 100%;
 	}

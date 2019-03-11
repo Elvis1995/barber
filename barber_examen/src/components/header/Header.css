@@ -1,7 +1,7 @@
 /* header */
 
 section#header {
-	background-image: linear-gradient(-45deg, rgba(55,45,75,1) 0%, rgba(45,52,71,1) 100%);
+	background-image: linear-gradient(-45deg, rgba(55, 45, 75, 1) 0%, rgba(45, 52, 71, 1) 100%);
 	min-height: 100vh;
 	height: 100%;
 	position: relative;
@@ -16,11 +16,11 @@ section#header pattern {
 }
 
 section#header .graphic {
-    bottom: 0;
-    mix-blend-mode: lighten;
-    position: absolute;
-    right: 0;
-    width: 70%;
+	bottom: 0;
+	mix-blend-mode: lighten;
+	position: absolute;
+	right: 0;
+	width: 70%;
 }
 
 /* header - wrapper */
@@ -51,7 +51,7 @@ section#header graphic {
 /* header - text */
 
 section#header .wrapper h1 {
-	color: rgba(250,205,95,1);
+	color: rgba(250, 205, 95, 1);
 	margin: 0 0 15px 0;
 	text-transform: uppercase;
 }
@@ -62,7 +62,7 @@ section#header .wrapper p {
 }
 
 section#header .wrapper p {
-	color: rgba(255,255,255,1);
+	color: rgba(255, 255, 255, 1);
 }
 
 /* header - button */
@@ -84,7 +84,7 @@ section#header .button {
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
-	
+
 	/* header - text */
 
 	section#header .wrapper h1 {
@@ -118,7 +118,7 @@ section#header .button {
 
 	section#header .wrapper {
 		padding: 130px 50px 50px 50px;
-    	width: calc(100% - 100px);
+		width: calc(100% - 100px);
 	}
 
 	/* header - text */
@@ -150,4 +150,3 @@ section#header .button {
 		font-size: 20px;
 	}
 }
-

@@ -1,5 +1,5 @@
 section#footer {
-	background-color: rgba(43,42,60,1);
+	background-color: rgba(43, 42, 60, 1);
 	padding: 30px 0;
 	position: relative;
 	width: 100%;
@@ -8,18 +8,18 @@ section#footer {
 /* details */
 
 section#footer .links a {
-	border-right: 1px dotted rgba(220,220,220,0.15);
-    color: rgba(255,255,255,1);
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: 51px;
-    margin: 0 30px 0 0;
-    padding: 0px 30px 0 0;
-    text-decoration: none;
-    text-transform: uppercase;
+	border-right: 1px dotted rgba(220, 220, 220, 0.15);
+	color: rgba(255, 255, 255, 1);
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	line-height: 51px;
+	margin: 0 30px 0 0;
+	padding: 0px 30px 0 0;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 section#footer a:last-of-type {
@@ -30,7 +30,7 @@ section#footer a:last-of-type {
 /* icons */
 
 section#footer .links i {
-	color: rgba(250,205,95,1);
+	color: rgba(250, 205, 95, 1);
 	margin-right: 15px;
 	vertical-align: middle;
 	line-height: inherit;
