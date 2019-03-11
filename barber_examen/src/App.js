@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <Router>
         <div>      
-          <Route exact path="/" component={homePage} />
+          <Route exact={true} path="/" component={homePage} />
           <Route path="/Boka" component={BookingPage} />
           <Route path="/Kontakt" component={contact} />
         </div>

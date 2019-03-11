@@ -185,7 +185,7 @@ p:not(.small) {
 
 @media only screen and (max-width: 900px) {
 	.bookingtest {
-		min-height: 100vh;
+		min-height: 750px;
 	}
 	.booking-calendar {
 		width: 100%;

@@ -43,6 +43,10 @@
 	color: rgba(250,205,95,1);
 }
 
+.nav a.button.active_link {
+	color: rgba(250,205,95,1);
+}
+
 /* Links (for hamburger) */
 
 .nav .links {
@@ -60,7 +64,7 @@
 	cursor: pointer;
 	display: none;
 	position: absolute;
-	right: 50px;
+	right: 35px;
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 15;
@@ -152,7 +156,7 @@
 	}
 
 	#nav-icon2 {
-		width: 60px;
+		width: 40px;
 		height: 60px;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
@@ -169,7 +173,7 @@
 		position: absolute;
 		height: 9px;
 		width: 50%;
-		background:rgba(250,205,95,1);;
+		background:rgba(255,255,255,1);
 		opacity: 1;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
@@ -239,11 +243,11 @@
 
 	#nav-icon2.open span:nth-child(5) {
 		left: 5px;
-		top: 29px;
+		top: 23px;
 	}
 
 	#nav-icon2.open span:nth-child(6) {
 		left: calc(50% - 5px);
-		top: 29px;
+		top: 23px;
 	}
 }

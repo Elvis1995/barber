@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../../css/Master.css';
 import './Nav.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 // import Route from 'react-router-dom/Route';
 
 export default class Nav extends Component {
@@ -51,14 +51,14 @@ render() {
 		<div>
 			<div className={this.state.scrolled ? 'nav scrolled' : 'nav'}>
 				<div className="wrapper">
-					<Link to={"/"}>
+					<NavLink activeClassName='active_link' to={"/"}>
 						<img className="logo" src="/img/logo/logo.png" alt="Logo" />
-					</Link>
+					</NavLink>
 					<div className="links">
 						<ul>
-							<Link to={"/"} className="button">Startsida</Link>
-							<Link to={"/Boka"} className="button">Boka nu</Link>
-							<Link to={"/Kontakt"} className="button">Kontakt</Link>
+							<NavLink exact={true} activeClassName='active_link' to={"/"} className="button">Startsida</NavLink>
+							<NavLink activeClassName='active_link' to={"/Boka"} className="button">Boka nu</NavLink>
+							<NavLink activeClassName='active_link' to={"/Kontakt"} className="button">Kontakt</NavLink>
 						</ul>
 					</div>
 					<div className="hamburger">
@@ -72,9 +72,9 @@ render() {
 						</div>
 					</div>
 					<div className="menu_container">
-						<Link to={"/"} className="button">Startsida</Link>
-						<Link to={"/Boka"} className="button">Boka nu</Link>
-						<Link to={"/Kontakt"} className="button">Kontakt</Link>
+						<NavLink exact={true} activeClassName='active_link' to={"/"} className="button">Startsida</NavLink>
+						<NavLink activeClassName='active_link' to={"/Boka"} className="button">Boka nu</NavLink>
+						<NavLink activeClassName='active_link' to={"/Kontakt"} className="button">Kontakt</NavLink>
 					</div>
 				</div>
 			</div>
