@@ -25,15 +25,6 @@ export default class Nav extends Component {
 
 			let openHamburger = document.querySelector('.hamburger');
 			let menuContainer = document.querySelector('.links');
-			let menyHoger = document.querySelectorAll('.menu_container .button');
-
-			for(let i = 0; i < menyHoger.length; i++) {
-				menyHoger[i].addEventListener('click', function() {
-					if(menyHoger === 'activee') {
-						this.classList.add('activee');
-					}
-				});
-			}
 			
 			openHamburger.addEventListener('click', () => {
 				if(this.state.open === false) {	
