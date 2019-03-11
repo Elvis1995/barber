@@ -7,10 +7,17 @@ import { Link } from 'react-router-dom';
 export default class Nav extends Component {
 	constructor() {
 		super();
+		this.addActiveClass= this.addActiveClass.bind(this);
 		this.state = {
 			scrolled: false,
-			open: false
-		}
+			open: false,
+			active: false
+		};
+	}
+
+	addActiveClass() {
+		const currentState = this.state.active;
+		this.setState({ active: !currentState });
 	}
 
 	componentDidMount() {
@@ -29,13 +36,14 @@ export default class Nav extends Component {
 			openHamburger.addEventListener('click', () => {
 				if(this.state.open === false) {	
 					menuContainer.style.display = 'block';
-					this.setState({open : true});
+					this.setState({ open : true });
 				}
 				else if(this.state.open === true) {
 					menuContainer.style.display = 'none';
-					this.setState({open : false});
+					this.setState({ open : false });
 				}
 			});
+			
 		}
 
 render() {
@@ -54,9 +62,14 @@ render() {
 						</ul>
 					</div>
 					<div className="hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
+						<div id="nav-icon2" className={this.state.active ? 'open': null} onClick={this.addActiveClass}>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 					<div className="menu_container">
 						<Link to={"/"} className="button">Startsida</Link>
