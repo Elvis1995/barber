@@ -85,7 +85,7 @@ export default class Bookingpage extends Component {
   render() {
     return (
 		<div>
-			<div className="bookingtest">
+			<div className="booking_container">
 				<Nav />
 				<div className="wrapper">
 				<BookingCalendar bookings={bookings}clickable={true} />

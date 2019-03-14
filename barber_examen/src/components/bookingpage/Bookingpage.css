@@ -4,7 +4,7 @@
 	width: 50%;
 }
 
-.bookingtest {
+.booking_container {
 	background-image: url(/img/background/offers.jpg), linear-gradient(-45deg, rgba(55, 45, 75, 1) 50%, rgba(45, 52, 71, 1) 100%);
 	background-position: center;
 	background-size: 100% 100%;
@@ -185,7 +185,7 @@ p:not(.small) {
 }
 
 @media only screen and (max-width: 900px) {
-	.bookingtest {
+	.booking_container {
 		min-height: 750px;
 	}
 
