@@ -16,10 +16,10 @@ export default class Contacts extends Component {
               </div>
               <div className="contact_person_info">
                 <h4 className="contact_person_name">Emma lindh</h4>
-                <h5 className="contact_person_title">Anställd</h5>
+                <h5 className="contact_person_title">Chef / Ansvarig</h5>
                 <p className="contact_person_story">Hej! Mig kan du kontakta om du är intresserad av vårt produktbud och vill veta mer</p>
                 <div className="contact_person_touch">
-                  <p>ali.karadag@alisfrisor.se</p>
+                  <p>Emma.lindh@alisfrisor.se</p>
                   <p>073 942 42 50</p>
                 </div>
               </div>
@@ -44,7 +44,7 @@ export default class Contacts extends Component {
               </div>
               <div className="contact_person_info">
                 <h4 className="contact_person_name">Sara kärnström</h4>
-                <h5 className="contact_person_title">Chef / Ansvarig</h5>
+                <h5 className="contact_person_title">Anställd</h5>
                 <p className="contact_person_story">Hej! Mig kan du kontakta om du är intresserad av vårt produktbud och vill veta mer</p>
                 <div className="contact_person_touch">
                   <p>Sara.karnstrom@alisfrisor.se</p>

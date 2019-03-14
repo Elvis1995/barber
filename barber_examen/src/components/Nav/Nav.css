@@ -227,13 +227,13 @@
 	}
 
 	#nav-icon2.open span:nth-child(1) {
-		left: 5px;
-		top: 7px;
+		left: -2px;
+		top: 9px;
 	}
 
 	#nav-icon2.open span:nth-child(2) {
 		left: calc(50% - 5px);
-		top: 7px;
+		top: 8px;
 	}
 
 	#nav-icon2.open span:nth-child(3) {
@@ -247,12 +247,12 @@
 	}
 
 	#nav-icon2.open span:nth-child(5) {
-		left: 5px;
-		top: 23px;
+		left: -2px;
+		top: 25px;
 	}
 
 	#nav-icon2.open span:nth-child(6) {
 		left: calc(50% - 5px);
-		top: 23px;
+		top: 25px;
 	}
 }
