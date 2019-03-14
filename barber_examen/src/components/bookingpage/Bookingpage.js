@@ -94,11 +94,11 @@ export default class Bookingpage extends Component {
 						<h3>Fyll i formuläret</h3>
 						<form className="confirm_form" action="">
 							<label>Namn</label>
-							<input type="text" name="name" placeholder="Namn" value={this.state.name} onChange={this.handleChange}></input>
+							<input type="text" name="name" placeholder="Namn" value={this.state.name} onChange={this.handleChange} required></input>
 							<label>Telefonnummer</label>
-							<input type="text" name="phone" placeholder="Ex. 0762251663"></input>
+							<input type="text" name="phone" placeholder="Ex. 0762251663" required></input>
 							<label>Email</label>
-							<input type="text" name="mail" placeholder="Alfred@hotmail.com"></input>
+							<input type="text" name="mail" placeholder="Alfred@hotmail.com" required></input>
 							<button className="button rounded green confirm_booking_button" type="button" name="submit">Boka nu</button>
 						</form>
 					</div>
