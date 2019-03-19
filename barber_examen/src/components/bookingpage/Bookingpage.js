@@ -10,8 +10,8 @@ const bookings = [
   new Date(2019, 4, 14),
   new Date(2019, 5, 17),
   new Date(2019, 4, 11),
-  new Date(2019, 3, 27),
-  new Date(2019, 3, 29)
+  new Date(2019, 2, 27),
+  new Date(2019, 2, 29)
 ];
 
 export default class Bookingpage extends Component {
